@@ -1,0 +1,24 @@
+{
+  "name": "medicare-pharmacy-system",
+  "version": "1.0.0",
+  "description": "A comprehensive healthcare platform integrating doctor appointments and medicine delivery",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "medicare",
+    "pharmacy",
+    "healthcare",
+    "mern",
+    "doctor-appointment"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
